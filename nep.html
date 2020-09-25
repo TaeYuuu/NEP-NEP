@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>어쩌다보니 넵병</title>
+	<meta charset="utf-8">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+	 
+	 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="menu.css">
+	 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	 <script type="text/javascript" src="http://www.blueb.co.kr/SRC/javascript/moveobj.js"></script>
+
+	 <style>
+	  .mcontain {width:1900px; margin:0 auto; border: 4px solid blue;  overflow: hidden; position: relative; left: -10px;}
+	  .mcontain2 { width:1900px; margin:0 auto; border: 4px solid blue;  overflow: hidden; position: relative; left: -10px;}
+	   .sec0 { position: relative; height:1080px; background: linear-gradient(180deg, #ffc502 54%, #fbf5eb 46%); z-index: 2;}
+	   @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+
+.text {
+  position: relative;
+  width: 1800px;
+  left: -30%;  
+  height: 40px;
+  top: 0%;
+ background-color: red;
+}
+
+
+.text p {font-size: 450px;  letter-spacing: 70px;			  
+				  text-align: center;
+				  text-transform: uppercase;
+				  white-space: nowrap;
+				  -webkit-text-stroke: 3px #ffc502;
+					text-stroke: 2px #ffc502; 
+				text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 1800px; background-color: blue;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+   
+    .back {
+        margin:2em auto;
+       
+    }
+    .back span {border: 4px solid white;
+        font-size:6em;
+        color:#F2C640;
+        background:#262B37;
+        display:table-cell; border
+        box-shadow:inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 #ccc;
+        padding: 30 100px; text-align: right;
+        line-height: 150px; letter-spacing: 20px;
+        animation:jumb 2s infinite;
+    }
+    @keyframes jumb {
+        0% {
+            transform:translateY(0px)
+        }
+        50% {
+            transform:translateY(-30px);
+            box-shadow:0 15px 0 rgb(242, 198, 64);
+        }
+        100% {
+            transform:translateY(0px)   
+        }
+    }
+    .back span:nth-child(1) {
+        animation-delay:0s;
+    }
+    .back span:nth-child(2) {
+        animation-delay:.1s;    
+    }
+    .back span:nth-child(3) {
+        animation-delay:.2s;
+    }
+    .back span:nth-child(4) {
+        animation-delay:.3s;    
+    }
+    .back span:nth-child(5) {
+        animation-delay:.4s;
+    }
+    .back span:nth-child(6) {
+        animation-delay:.5s;    
+    }
+    .back span:nth-child(7) {
+        animation-delay:.6s;
+    }
+
+    .backbox{position: relative; top:50px; left: 300px; width:800px; height: 250px; background-color: red;}
+    .s1box1{ position: relative; top: -40px;	
+			  text-transform: uppercase;
+			   color: #fff;
+				   font-size: 560px;
+				    letter-spacing: 0.1em;			  
+				  text-align: center;
+				  text-transform: uppercase;
+				  white-space: nowrap;
+				  -webkit-text-stroke: 3px #ffc502;
+					text-stroke: 2px #ffc502; 
+				text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);}
+	   .sec1 {position: relative; height:1380px; background-color: #fbf5eb;}
+
+	   .nepbox1{position: relative; top: 100px; left: 180px; padding: 10px; width: 800px; height: 270px;}
+	   .nepbox1 h1{ text-align: left; 
+					  font-size: 32px; color: #6e6e6e;}
+
+	   .nepbox1 h2{ text-align: left; line-height: 100px; margin-top: -20px; font-size: 90px;}
+	   .nepbox1-2{position: relative; top: 45px; font-size: 450px; left: 170px; color: #ffc502;}
+	   .bar1{position: relative; top: 48px; width: 12px; height: 352px; left:180px; background-color: black;}
+	   .nepbox1-3{position: relative; top: 48px; left: 220px; width: 600px; height: 345px; font-size: 29px; color: #6e6e6e; letter-spacing: -0.6px; line-height: 1.6;}
+	   .rotypo{position: relative; top: 130px; left: 220px; width: 800px; height: 200px; font-size: 33px; line-height: 63px; transform: rotate(-90deg); }
+
+
+
+
+	    .sec3 {position: relative; height:780px; background-color: #fbf5eb; border: 4px solid red;}			    
+
+
+		.mainMenu{ position: absolute; top: -500px; left: 700px;
+		    width: 490px;
+		    display: block;		   
+		    overflow: hidden;  transform: rotate(-90deg);
+		}
+		.item{ list-style: none;
+    		text-decoration: none;
+		    border-top: 0px solid transparent;
+		    
+		}
+		.bbbtn{list-style: none;
+    		text-decoration: none;
+		    display: block; font-size: 150px;
+		    
+		    background: linear-gradient(90deg, #ffc502 65%, #fbf5eb 35%);
+		    color: #ffc502;
+		    position: relative;
+
+		}
+
+		.outline{ -webkit-text-stroke: 3px white;
+					text-stroke: 2px white; }
+
+
+
+		.bbbtn:before{
+		    content: '';
+		    position: relative;
+		    width: 0;
+		    height: 0;
+		    border-left: 8px solid transparent;
+		    border-right:8px solid transparent;
+		    border-top:10px solid transparent;
+		    right: 15px;
+		    bottom: -10px;
+		    z-index: 9;
+		    
+		}
+		.bbbtn i {
+		    margin-right: 150px;
+		}
+		.subMenu{
+		    background: #273057;
+		    overflow: hidden;
+		    transition: max-height 0.7s;
+		    max-height: 0;
+		}
+
+		.subMenu img{width: 500px; }
+		
+		.item:target .subMenu{
+		    max-height: 220px;
+		}
+
+
+		
+		.s1{
+			width: 95%; 		 			 	 
+		 	}
+
+
+
+
+	 </style>
+</head>
+
+
+<body>
+	<div class="mcontain">
+		<a href="#"> 
+		<span class="upkey korblack "> 
+		    top
+		</span>
+		</a>
+
+
+		<div id="menubox">
+
+	    <div id="dropdowncontent">
+	      <a href="./index.html"><p class="kor500">0.입장하기</p></a>
+	      <a href="./intro.html"><p class="kor500">1.about</p></a>
+	      <a href="./bogoo.html"><p class="kor500">2.실태 보고서</p></a>
+	      <a href="./nep.html"><p class="kor500">3.어쩌다보니 넵병</p></a>
+	      <a href="./cctv.html"><p class="kor500">4.네 마음속 CCTV</p></a>
+	      <!--a href="./7.html"><p class="kor500">  </p></a-->
+	    </div>
+
+	    <div id="menuff">
+	      <h1 id="menutxt">menu</h1>
+	    </div>
+
+		</div>
+		 
+
+		<section class="sec0">
+			<div class="backbox korblack">
+				<span class="back ">
+			    <span>어</span>
+			    <span>쩌</span>
+			    <span>다</span>
+			    <span>보</span>
+			    <span>니</span>   
+			</span>
+				</div>
+
+
+				<div class="text korblack">  
+			  <p>
+			    <span class="word wisteria">넵ㅎ</span>
+			    <span class="word belize">넵!!</span>
+			    <span class="word pomegranate">넵...?</span>
+			    <span class="word green">ㅋㅋ넵</span>
+			    <span class="word midnight">네엡</span>
+			  </p>
+			</div>
+			
+		</section>
+
+
+		<video width="1900" height="1000" controls>
+  <source src="nep.mp4" type="video/mp4">
+		</video>
+
+
+
+
+		<section class="sec1">
+			
+			
+			<div class="nepbox1">
+			<h1 class="kordo">부장님, 전 ‘넵’밖에 몰라요</h1>
+			<h2 class="kordo">넵으로 오만가지 감정을 <br>다 하는 직장인들</h2></div>
+			<div class="nepbox1-2 korblack" style="display:inline-block;">넵</div>
+			<div class="bar1" style="display:inline-block;"></div>
+			<div class="nepbox1-3 kor500" style="display:inline-block;">
+				'넵'병은 '을'의 관계에 있는 사람들이 '갑'에게 대답할 때 자기도 모르게 '넵'을 타이핑하게 되는 슬픈 현상을 의미한다. ‘네’는 너무 딱딱하고 ‘넹’은 장난스러워 보이니 ‘넵’이라고 써서 보다 유하고 신속 정확한 느낌을 주고자 한다는 것이다. 짧은 대답 한마디에도 남의 시선을 신경 써야 하는 요즘 현대인의 고충이 담겨있다.
+				넵병은 아직 뚜렷한 치료법이 발견되지 않아 지금도 창궐하고 있다.
+
+			</div>
+
+			 <div class="kordo rotypo" style="display:inline-block;">
+			  	<span style="background-color:#ffc502; color:white; padding: 7px;">
+			  		 &nbsp;메신저에서 상사의 지시에 답할 때 쓰는 표현으로 딱딱해&emsp;&emsp;<br> 
+			  	 	&nbsp;보이는 ‘네’, 가벼워 보이는 ‘네에’ 비해 ‘넵’은&emsp;&emsp; <br> 
+			  		 &nbsp;신속하고 의욕이 충만해 보인다.&emsp;&emsp;<br> </span>
+			  				  </div>
+
+			
+
+		</section>
+
+
+		<section class="sec3">
+				<div class="wrapperr">
+        <ui class="mainMenu">
+
+        	<li class="item" id="01">
+                <a href="#01" class="bbbtn kordo"><i class="fas fa-info01"></i></a>
+                <div class="subMenu">                   
+                </div>
+            </li>
+
+        	<li class="item" id="0">
+                <a href="#0" class="bbbtn kordo"><i class="fas fa-info0"></i></a>
+                <div class="subMenu">                   
+                </div>
+            </li>
+
+        	<li class="item" id="00">
+                <a href="#00" class="bbbtn kordo"><i class="fas fa-info00"></i></a>
+                <div class="subMenu">                    
+                </div>
+            </li>
+
+            <li class="item" id="111">
+                <a href="#111" class="bbbtn kordo"><i class="fas fa-user-circle"></i><span class="outline">넵</span>&nbsp;...?</a>
+                <div class="subMenu">
+                    <img src="under1.png">
+                    
+                </div>
+            </li>
+            <li class="item" id="222">
+                <a href="#222" class="bbbtn kordo"><i class="fas fa-address-card"></i>
+                <span class="outline">넵</span>&nbsp;ㅎ</a>
+                <div class="subMenu">
+                    <img src="under1.png">
+
+                   
+                </div>
+            </li>
+            <li class="item" id="333">
+                <a href="#333" class="bbbtn kordo"><i class="fas fa-info"></i><span class="outline">넵</span>&nbsp;^^</a>
+                <div class="subMenu">
+                    <img src="under1.png">
+                </div>
+            </li>
+            <li class="item" id="444">
+                <a href="#444" class="bbbtn kordo"><i class="fas fa-info4"></i><span class="outline">넵</span>&nbsp;~~</a>
+                <div class="subMenu">
+                    <img src="under1.png">
+                </div>
+            </li>
+            <li class="item" id="555">
+                <a href="#555" class="bbbtn kordo"><i class="fas fa-info5"></i><span class="outline">넵</span>&nbsp;!!!</a>
+                <div class="subMenu">
+                    <img src="under1.png">
+                </div>
+            </li>
+            <li class="item" id="666">
+                <a href="#666" class="bbbtn kordo"><i class="fas fa-info6"></i><span class="outline">넵</span>&nbsp;넵</a>
+                <div class="subMenu">
+                    <img src="under1.png">
+                </div>
+            </li>
+            <li class="item" id="555">
+                <a href="#555" class="bbbtn kordo"><i class="fas fa-info5"></i></a>
+                <div class="subMenu">                  
+                </div>
+            </li>
+            <li class="item" id="555">
+                <a href="#555" class="bbbtn kordo"><i class="fas fa-info5"></i></a>
+                <div class="subMenu">                   
+                </div>
+            </li>
+
+        </ui>
+    </div>
+
+		</section>
+
+
+
+<DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="intro.html"><IMG SRC="넵.png" BORDER=0></a>
+</DIV>
+
+<DIV ID="flyimage2" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="intro.html"><IMG SRC="넵.png" BORDER=0></a>
+</DIV>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   		 AOS.init();
+ </script>
+
+
+  <script>
+
+		menuff.onmouseover=function(){
+	     dropdowncontent.style.visibility = "visible";
+	     dropdowncontent.style.height = "350px";
+	     dropdowncontent.style.transition="all 0.2s";
+	     menuff.style.cursor="url(cursor1.png) 0 0 ,auto;";
+	     menuff.style.borderRadius="50%";
+	     menubox.style.height="460px";
+	   }
+
+
+
+	  menubox.onmouseout=function(){
+	    dropdowncontent.style.visibility = "hidden";
+	    dropdowncontent.style.height = "0px";
+	    dropdowncontent.style.transition="all 0.2s";
+	    menuff.style.borderRadius="0%";
+	    menubox.style.transition="all 0.2s";
+	    menubox.style.height="60px";
+	}
+
+	  dropdowncontent.onmouseover=function(){
+	    dropdowncontent.style.visibility="visible";
+	    dropdowncontent.style.height="350px";
+	    menuff.style.borderRadius="0%";
+	    menubox.style.height="460px";
+	  }
+
+	
+
+
+ </script>
+
+<script type="text/javascript">
+var flyimage1, flyimage2
+
+function pagestart(){
+	flyimage1=new Chip("flyimage1",47,68);
+	flyimage2=new Chip("flyimage2",47,68);
+	
+
+	movechip("flyimage1");
+	movechip("flyimage2");
+	
+}
+
+if (window.addEventListener)
+	window.addEventListener("load", pagestart, false)
+	else if (window.attachEvent)
+		window.attachEvent("onload", pagestart)
+	else if (document.getElementById)
+		window.onload=pagestart
+</script>
+
+<script type="text/javascript">
+	var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+        cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+        nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
+</script>
+
+</body>
+</html>
