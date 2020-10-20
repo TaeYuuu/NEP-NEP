@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>요즘 것들의 실태 보고서</title>
+
+	<meta charset="utf-8">	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+	 
+	 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="menu.css">
+
+	 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	
+	
+	<style>
+	  html, body, header,footer, nav, figure, img {box-sizing:border-box; margin: 0; padding:0;}
+	  html, body {scroll-behavior: smooth;}
+
+	
+
+	   .mcontain {width:1900px; margin:0 auto; overflow: hidden;  position: relative;}
+
+	    
+	  
+	
+    .sec1 {position: relative; height:1080px;}
+    .backtypo {position: absolute; left: 120px; top: 140px;}
+    .backtypo p{font-family: 'Black Han Sans'; 
+				      font-style:sans-serif;   
+					  font-size: 5em; color: white;}
+
+     .introduction{width:53%; height:100%; float:left; padding-top:0.4%; box-sizing:border-box;background-color: red;}
+
+	
+
+	  .flowbox p{position: absolute;				  
+					  margin: 0;
+					   font-family: 'Black Han Sans'; 
+				      font-style:sans-serif; 			      
+					  color: #ffd020;
+					  font-size: 15em; }
+
+	  
+
+
+    .box {position: relative; top: 60px; left: 450px; width: 600px; height: 140px; background-color: white; border: 3px solid black; transition:.25s;}
+	.box1 {position: relative; top: -15px; left: -15px; width: 600px; height: 140px; background-color: white; border: 3px solid black; transition:.25s;}
+	.box2 {position: relative; top: 32px; left: 570px; width: 900px; height: 140px; background-color: white; border: 3px solid black; transition:.25s;}
+	.box3 {position: relative; top: 60px; left: 200px; width: 930px; height: 140px; background-color: white; border: 3px solid black; transition:.25s;}
+
+	
+	
+	.box:hover{top: 50px;}
+	.box2:hover{top: 20px;}
+	.box3:hover{top: 40px;}
+
+	.line-1{ font-family: 'Black Han Sans', sans-serif;
+	    position: relative;
+	    top: 57%;  
+	    width: 40em;
+	    margin: 0 auto;
+	    border-right: 6px solid orange;
+	    font-size: 120px;
+	    color: #090c41;
+	    text-align: center;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    transform: translateY(-50%);    
+	}
+
+	/* Animation */
+	.anim-typewriter{
+	  animation: typewriter 0.5s steps(8) 0.8s 1 normal both,
+	             blinkTextCursor 1000ms step-end infinite;
+	}
+	@keyframes typewriter{
+	  from{width: 0;}
+	  to{width: 4em;}
+	}
+	@keyframes blinkTextCursor{
+	  from, to { border-color: transparent }
+  		50% { border-color: orange}
+	}
+
+	.anim-typewriter2{
+	  animation: typewriter2 1s steps(15) 0.5s 1 normal both,
+	             blinkTextCursor 1000ms step-end infinite; 
+	}
+	@keyframes typewriter2{
+	  from{width: 0;}
+	  to{width: 6.5em;}
+	}
+
+	.anim-typewriter3{
+	  animation: typewriter3 1s steps(15) 0.5s 1 normal both,
+	             blinkTextCursor 1000ms step-end infinite;
+	}
+	@keyframes typewriter3{
+	  from{width: 0;}
+	  to{width: 7em;}
+	}
+
+	
+	.bg {
+	  position: absolute;
+	  background-color: #ffc502;
+	  width:1900px; height: 2080px;
+	  z-index: -99;
+	  top: -1000px; 	  
+	  transition: .25s;
+	  pointer-events: none;
+	}
+
+
+	
+
+	.colorimg 
+    { 
+    	position: absolute;
+		top: 40%;			
+    	width:100%;    
+       overflow:visible;
+
+	   }
+	.colorimg img{-webkit-filter: grayscale(0%);
+	filter: none; transition:.25s; position: relative; top: 0px;}       
+
+	.colorimg img:hover ~ .bg {
+	  background: white;
+	}
+
+	.colorimg img:hover {
+	  -webkit-filter: grayscale(100%);
+	filter: gray(); top: 20px; width: 200px;
+	}
+
+
+	.sec2 {position: relative; top: -60px; height: 2080px; background-color: #fbf5eb;}
+	.bbox {position: relative; top: -80px; margin:0 auto; width: 1700px; height: 275px; transition:.25s;}
+	.box4-1 {position: relative; left: 10px; top: 20px; margin:0 auto; width: 1670px; height: 247px; border: 3px solid black; transition:.25s; background-color: red;}	
+	.box4-2 {position: relative; left: -12px; top: -13px; margin:0 auto; width: 1670px; height: 247px; border: 3px solid black; transition:.25s; background-color: red;}
+	.box4 {position: relative; left: -12px; top: -13px; margin:0 auto; width: 1670px; height: 247px; background-color: white; border: 3px solid black; transition:.25s;}
+	.box4 h1{ text-align: center; font-family: 'Black Han Sans'; 
+						font-weight: 500; margin-top: 14px;
+				      font-style:sans-serif;   
+					  font-size: 155px; color: black;}
+	.box4 p{ text-align: center; font-family: 'Noto Sans KR',
+						font-weight: 500; margin-top: -155px;
+				      font-style:sans-serif; font-weight: 500; 
+					  font-size: 31px; color: #ffc502;}
+	.backtypo1{position: absolute; top:1020px; left: 1450px; height: 1000px; width: 350px;}
+    .backtypo1 p{margin-top: 600px; font-family: 'Noto Sans KR'; font-weight: 900; font-size: 170px; color: #fde6ac; white-space: nowrap; letter-spacing: 3px;  transform: rotate(-90deg); }
+	.video1{position: relative; left: 160px;}
+
+	.box5 {position: relative; left: 170px; top: -250px; margin:0 auto; width: 500px; height: 130px; background-color: red;}
+	.box5 p{ text-align: center; font-family: 'Black Han Sans'; 
+						font-weight: 500; margin-top: 14px;
+				      font-style:sans-serif;   
+					  font-size: 95px; color: #ffc401;}
+	.box5-2 {position: relative; top: -260px; left: 300px; margin:0 auto; width: 630px; height: 170px; background-color: white; border: 3px solid black; transition:.25s; animation: compare 1.5s infinite alternate; animation-timing-function:ease-in-out;}		
+
+	@-webkit-keyframes compare{
+		  from{
+		    left: 300px;
+		  }
+		  to{
+		    left:400px;
+		  }
+		}
+
+
+	.box5-1 {position: relative; top: -10px; left: -10px; margin:0 auto; width: 630px; height: 170px; background-color: white; border: 3px solid black; transition:.25s; }
+	
+	.box5-1 p{ text-align: center; font-family: 'Black Han Sans'; 
+						font-weight: 500; margin-top: 14px;
+				      font-style:sans-serif;   
+					  font-size: 130px; color: #090c41;}
+
+	#p1{
+	  position: relative;
+	  top: -250px;	
+	  left: 130px;  
+	  width:1350px; height: 750px;	
+	  padding: 2%;
+	  text-align: left;	  
+	  font-size: 1em; 
+	  
+	}
+
+	
+
+	#p1_1{position: relative;
+		left: -200px; top: -90px;
+		width:600px;
+		text-align: left;
+	  font-size: 90px;
+	   color: #090c41;	  
+	  transform: rotate(-90deg); line-height: 100.8%;
+	}
+	#p1_2{position: relative; top: 30px; left: -400px;
+		width: 9%;}
+
+	#p1_3{position: absolute;
+		top: 60px;
+		left: 460px;
+		 width: 750px;
+	  font-size: 29px; line-height: 165%; letter-spacing: -0.9px;  
+	}
+	
+	#p1_4{position: absolute;
+		top: 470px;
+		left: 460px;
+		width:1100px;
+	  font-size: 29px; letter-spacing: -0.6px;
+	  line-height: 175%;	  
+	}
+
+	.sec3 {position: relative; top: -60px; height: 3800px; background: linear-gradient(180deg, #ffc502 52%, #fbf5eb 48%);}
+
+	.box5-3 {position: relative; top: -100px; left: -30px; width: 1480px; height: 285px; background-color: white; border: 3px solid black; transition:.25s;}
+
+	.box5-4 {position: relative; padding-top: 25px; padding-left: 140px; padding-right: 55px; top: -13px; left: -15px; width: 1315px; height: 255px; font-size: 26px; line-height: 165%; letter-spacing: -0.6px; background-color: white; border: 3px solid black; transition:.25s; }
+
+
+	.box5-4:hover{background-color: red; color: white; transform: translate(0.4rem, -0.4rem);}
+
+	
+
+	.box6 {position: relative; top:-10px; left: 130px; width: 500px; height: 130px; font-size: 92px; color: white;}
+	.box6 .text-wrapper {
+	  position: relative;
+	  display: inline-block;
+	  padding-top: 0.2em;
+	  padding-right: 0.05em;
+	  padding-bottom: 0.1em;
+	  overflow: hidden;
+		}
+
+	.box6 .letter {
+	  display: inline-block;
+	  line-height: 1em;
+		}
+		
+	.box6-2 {position: relative; left: 180px; width: 1240px; height: 180px; background-color: white; border: 3px solid black; transition:.25s;}		
+
+	
+
+
+	.box6-1 {position: relative; top: -15px; left: -20px; width: 1240px; height: 180px;  font-size: 130px; color: #090c41; background-color: white; border: 3px solid black; transition:.25s; }
+	
+	.box6-1 p{ text-align: center; font-family: 'Black Han Sans'; 
+						font-weight: 500; margin-top: 14px;
+				      font-style:sans-serif;   
+					  font-size: 140px; color: #090c41;}
+	
+	.rot1 {position: absolute; top: 60px; right: -130px; float: center;  box-sizing: border-box; padding:1%; border-radius:50%; color: white; 
+				 -webkit-animation: rotation 15s infinite ease;	
+					}
+	.rot2 {position: absolute; top: 60px; right: -130px; float: center; box-sizing: border-box; padding:1%; border-radius:50%; color: white;
+				 -webkit-animation: rotation1 15s infinite linear;	
+			}
+	@-webkit-keyframes rotation {
+			    from {-webkit-transform: rotate(0deg);}
+			    to   {-webkit-transform: rotate(359deg);}
+			}
+
+	@-webkit-keyframes rotation1 {
+			    from {-webkit-transform: rotate(0deg);}
+			    to   {-webkit-transform: rotate(-359deg);}
+			}
+	.imgbox{position: relative; top: 30px; left: 165px; width: 50%;}
+	.talk1{position: relative; width: 60%;}
+	.talk2{position: relative; top: -60px; left: 350px; width: 60%;}
+	.talk3{position: relative; top: -120px; width: 60%;}
+
+	.box6-3 {position: relative; top: 30px; left: 12px; margin: 0 auto; width: 1535px; height: 1340px; background-color: white; border: 3px solid black; }	
+	.box6-4 {position: relative; top: -17px; left: -17px; width: 1535px; height: 1340px; background-color: white; border: 3px solid black; }	
+	.box6-5 {position: relative; top: -17px; left: -17px; width: 1535px; height: 1340px; background-color: white; border: 3px solid black; overflow: hidden;}
+
+	.box6-6 {position: relative; top: -45px; margin: 0 auto; width: 1155px; font-size: 29px; line-height: 165%; letter-spacing: -1.2px;}
+	
+
+	.ml16 { position: relative; margin: 0 auto; top: 140px; text-align: center;
+	  color: #ffc502;
+	  padding: 40px 0;	  
+	  font-size: 38px;
+	  text-transform: uppercase;
+	  letter-spacing: 0.5em;
+	  overflow: hidden;
+	}
+
+	.ml16 .letter {
+	  display: inline-block;
+	  line-height: 1em;
+	}
+
+
+	.box7-2 {position: relative; top: 145px; left: 270px; width: 1260px; height: 110px; background-color: white; border: 3px solid black; transition:.25s;}	
+
+
+	.box7-1 {position: relative; top: -15px; left: -20px; width: 1260px; height: 110px;  font-size: 130px; color: #090c41; background-color: white; border: 3px solid black; transition:.25s; }
+	
+	.box7-1 p{ text-align: center; font-family: 'Black Han Sans'; 
+						font-weight: 500; margin-top: 7px;
+				      font-style:sans-serif;   
+					  font-size: 90px; color: #090c41;}
+
+	.box7-3 {position: relative; top: 120px; left: 600px; width: 1050px; height: 110px;  font-size: 130px; color: #090c41; background-color: white; border: 3px solid black; transition:.25s; }
+	
+	.box7-3 p{ text-align: center; font-family: 'Black Han Sans'; 
+						font-weight: 500; margin-top: 7px;
+				      font-style:sans-serif;   
+					  font-size: 90px; color: #090c41;}
+
+	.box7-4 {position: relative; top: 155px; left: 180px; width: 1200px; height: 110px;  font-size: 130px; color: #090c41; background-color: white; border: 3px solid black; transition:.25s; }
+	
+	.box7-4 p{ text-align: center; font-family: 'Black Han Sans'; 
+						font-weight: 500; margin-top: 7px;
+				      font-style:sans-serif;   
+					  font-size: 90px; color: #090c41;}
+
+
+	#p2{
+	  position: relative;
+	  top: 100px;	
+	  left: 190px;  
+	  width:1380px;	 
+	  padding: 1%;
+	  text-align: left;
+	  font-size: 1em;	  	  
+	}
+
+	#p2_2{position: relative; top: 150px;
+		width: 37%;}
+
+	#p2_3{position: absolute;
+		top: 170px;
+		left: 710px;
+		 width: 700px;
+	  font-size: 29px; line-height: 165%; letter-spacing: -0.9px;
+	}
+
+	.p2_4 {position: absolute; top:290px; left: 710px; white-space:nowrap; font-size: 90px; color: #ffc502; line-height: 110%;}
+
+	.sec4 {position: relative; height: 2180px; top: -65px; background-color: #ffc502; margin-bottom: 315px; }
+
+	.video2{position: relative; top:350px; left: 415px;}
+	.box8{position: absolute; top: 90px;}
+	.box8-1 {position: relative; top:-10px; left: 110px; width: 500px; height: 130px; font-size: 92px; color: white;}
+	.ml10 {
+		  position: relative;  top:-10px; left: -255px;		  
+		  font-size: 92px; color: white;}
+		}
+
+		.ml10 .text-wrapper {
+		  position: relative;
+		  display: inline-block;
+		  padding-top: 0.2em;
+		  padding-right: 0.05em;
+		  padding-bottom: 0.1em;
+		  overflow: hidden;
+		}
+
+		.ml10 .letter {
+		  display: inline-block;
+		  line-height: 1em;
+		  transform-origin: 0 0;
+		}
+	.backtypo2{position: absolute; top:650px; left: 115px; height: 1000px; width: 280px;}
+    .backtypo2 p{margin-top: 800px; font-family: 'Noto Sans KR'; font-weight: 900; font-size: 170px; color: #fde6ac; white-space: nowrap; letter-spacing: 3px;  transform: rotate(-90deg);}
+    .backtypo3{position: absolute; top:1060px; left: 410px; height: 1000px; width: 100px;}
+    .backtypo3 p{margin-top: 800px; font-family: 'Noto Sans KR'; font-weight: 900; font-size: 120px; color: #fde6ac; white-space: nowrap; letter-spacing: 3px;  transform: rotate(-90deg);}
+
+    #p3{position: relative;
+		top: 450px;
+		left: 810px;
+		 width: 735px;
+	  font-size: 29px; line-height: 165%; letter-spacing: -0.9px; word-spacing: 0.5px;
+	}
+
+	.box9-1 {position: relative; top:550px; left: 650px; width: 800px; height: 90px; background-color: white; border: 3px solid black;}	
+	.box9-1 p{font-size: 32px; text-align: center; margin-top: 20px; letter-spacing: -0.7px;}
+	.box9-2 {position: relative; top:550px; left: 1000px; width: 750px; height: 90px; background-color: white; border: 3px solid black;}
+	.box9-2 p{font-size: 32px; text-align: center; margin-top: 20px; letter-spacing: -0.7px;}
+	.box9-3 {position: relative; top:-12px; left: -12px; width: 750px; height: 90px; text-align: center; background-color: white; border: 3px solid black;}
+
+	.box9-4 {position: relative; top:470px; left: 820px; width: 1100px; height: 90px;background-color: white; border: 3px solid black;  animation: compare1 1.3s infinite alternate; animation-timing-function:ease-in-out;}
+	.box9-5 {position: relative; top:-12px; left: -12px; width: 1100px; height: 90px;  font-size: 37px;  background-color: white; border: 3px solid black; }
+	.box9-5 p{font-size: 37px;  text-align: center; margin-top: 16px; letter-spacing: -0.4px;}
+	.box9-5 a{text-decoration: none;  color: black;}
+	.dimg{position: relative; width: 60%; top: 570px; left: 600px; animation: compare2 1.3s infinite alternate; animation-timing-function:ease-in-out;}
+	@-webkit-keyframes compare1{
+		  from{
+		    left: 850px;
+		  }
+		  to{
+		    left: 920px;
+		  }
+		}
+
+	@-webkit-keyframes compare2{
+		  from{
+		    left: 640px;
+		  }
+		  to{
+		    left: 570px;
+		  }
+		}
+	
+	</style>
+</head>
+
+
+<body>
+
+	<div class="mcontain">
+		<a href="#" class="cursorclick"> 
+		<span class="upkey korblack cursorclick"> 
+		    top
+		</span>
+		</a>
+
+
+		<div id="menubox">
+
+	    <div id="dropdowncontent">
+	      <a href="./index.html"><p class="kor500">0.입장하기</p></a>
+	      <a href="./intro.html"><p class="kor500">1.about</p></a>
+	      <a href="./bogoo.html"><p class="kor500">2.실태 보고서</p></a>
+	      <a href="./nep.html"><p class="kor500">3.어쩌다보니 넵병</p></a>
+	      <a href="./cctv.html"><p class="kor500">4.네 마음속 CCTV</p></a>
+	      
+	    </div>
+
+	    <div id="menuff">
+	      <h1 id="menutxt">menu</h1>
+	    </div>
+
+		</div>
+
+		<section class="sec1">
+			<div class="backtypo">
+			<p>요즘 것들은&emsp; &emsp;adasdsssasas &emsp; &emsp; 그래!</p>
+			</div>
+       	
+			<div class="box">
+		 	<div id="click1" class="box1">
+		 		<p class="line-1 anim-typewriter">유연하고</p>
+		 	</div>
+		 	</div>
+
+		 	<div id="click2" class="box2">
+		 		<p class="line-1 anim-typewriter2">쿨하고 재미있고</p>
+		 	</div>
+
+		 	<div id="click3" class="box3">
+		 		<p class="line-1 anim-typewriter3">정직하고 솔직하고</p>
+		 	</div>
+		 	
+
+		  <div class="marquee">
+          <p style="font-size: 30em;">요즘 것들은 왜 그래?</p>
+       		 </div>
+
+			<div class="colorimg">
+			  <img src="in3.png" style="width: 60%; display: block; margin: 0px auto;">
+			  <div class="bg"></div>
+			</div>
+
+		</section>
+		<section class="sec2">
+			<span id="list2"></span>
+
+			<div data-aos="fade-up"
+     data-aos-duration="2000" class="backtypo1"><p>#슬라임연대&emsp;#워라밸</p></div>
+
+			<div data-aos="fade-up" class="bbox">
+			<div class="box4-1">
+				<div class="box4-2">			
+					<div class="box4"><h1>요즘 것들의 실태 보고서</h1>
+						<p>#간단&emsp; &emsp;#병맛&emsp; &emsp;#솔직&emsp; &emsp;거침없고&emsp; &emsp;#폭발적인&emsp; &emsp;#Z세대&emsp; &emsp;#ㅇㄱㄹㅇ&emsp; &emsp;#ㅂㅂㅂㄱ?</p></div>
+				</div>
+			</div>
+			</div>
+		
+
+			<div class="video1">
+			<iframe width="1250" height="710" src="https://www.youtube.com/embed/ZG1zYaMmjN0?start=465&end=530" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
+
+			<div class="box5">			
+					<p>요즘 것들은</p></div>
+			<div data-aos="flip-up"  class="box5-2"><div class="box5-1"><p>유연하고</p></div></div>
+
+
+			<div id="p1">
+				<div class="korblack" id="p1_1"  style="display:inline-block;">유연한<br>가치관을 지닌</div>
+				<img src="sec2_img.png" id="p1_2">
+			  <div class="kor500" id="p1_3" style="display:inline-block;">
+			    평생직장 시대였던 과거와는 달리 헌신의 대상을 자기 자신과<br>자신의 미래로 삼는 Z세대들은 이직과 회사에 대한 생각이<br>유연하다. 그만큼 직업관에서도 하나의 직업만을 추구하기보단<br>다양한 경로의 대안을 유연하게 생각한다.<br><br>
+				일과 삶의 균형에서도 상황에 따라 유연하게  생각한다.<br>그래서  ‘워라밸’에 대한 관심이 점점 높아지고 있다. 
+			  </div>
+
+			  <div class="kor500" id="p1_4" style="display:inline-block;">
+			  	<span style="background-color:#ffc502;  color:white;">
+			  		 &nbsp; 이준원씨 직무경험이 우리 회사랑 차이가 좀 커.&emsp;&emsp;<br> 
+			  	 &nbsp; 이건 어떻게 할 거에요?&emsp;&emsp;</span> <span style="background-color:#ffc502;"> <br> 
+			  		 &nbsp; 면접관님께서는 졸업하신 전공과 지금 하시는 직무가 같으신가요?&emsp;&emsp;<br> 
+			  		 &nbsp; 아니신 것 같은데도 면접을 담당하실 만큼 충분히 잘 해내신 것 같습니다. &emsp;<br> 
+			  	 &nbsp; 저 또한 그렇게 할 수 있다고 믿습니다.&emsp;&emsp;</span>
+			  </div>
+			</div>
+
+
+				
+		</section>
+		<section class="sec3">
+			<span id="list3"></span>
+			
+			<img src="rot1.png" class="rot1">
+			<img src="rot2.png" class="rot2">
+
+			<div class="box5-3"><div class="box5-4 kor500"><p>“과거 70년대생과 그 이전 세대에게 충성심이라는 것은 단연 회사에 대한 것이었다. 하지만 90년대생에게 충성심은 단연 자기 자신과 본인의 미래에 대한 것이다. 충성의 대상이 다르고 그 의미도 다르니 갈등이 
+			일어날 수밖에 없다. 때문에 90년대생들을 위한 조직 문화 개선 방안은 회사에 대한 충성심을 고취하는 것보다 자신들의 충성도에 회사가 어떻게 도움을 줄 수 있느냐에 방점이 찍혀야 한다.”                              <90년생이 온다> </p></div></div>
+
+			
+			<div class="box6 korblack">			
+					<span class="text-wrapper"><span class="letters"> 요즘 것들은</span></span></div>
+			<div data-aos="flip-up"  class="box6-2"><div class="box6-1"><p>쿨하고 재미있고</p></div></div>
+
+			<div class="imgbox">
+				<img src="talk1.png" class="talk1">
+				<img src="talk2.png" class="talk2">
+				<img src="talk3.png" class="talk3">
+			</div>
+
+			<div class="box6-3"><div class="box6-4"><div class="box6-5"><iframe style="margin: 18px" width="1500" height="845" src="https://www.youtube.com/embed/5PXZertQePY?start=1397&end=1450" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="marquee"><p style="font-size: 165px; opacity: 50%; position: relative; top: -30px">#간단 #재미 #줄임말 #신조어</p></div>
+			<div class="box6-6 kor500"><p>“중요한 것은 이 세대의 줄임말들은 그 범위가 무한대로 확장되면서, 기존의 모든 단어에 급속하게 영향을 미치고 있다는 것이다. 그리고 이러한 줄임말은 단순히 그들만이 공유하는 문화를 넘어 언어에 영향을 미치고 있다. 심지어 이제는 한국인뿐만 아니라 외국인들도 한국어 줄임말을 배우고 익히는 시대가 되었다.”  <90년생이 온다> </p></div>
+
+			</div></div></div>
+			<div class="ml16 kor500">요 즘 &emsp;애 들 은 &emsp;무 슨 &emsp;생 각 일 까 ?</div>
+
+			<div class="box7-2"><div class="box7-1"><p>참 어렵다 Z세대가 대체 뭔데</p></div></div>
+			<div class="box7-3"><p>직원들과 말도 안 통해!</p></div>
+			<div class="box7-4"><p>압수 당할 틀니도 이제 없어!</p></div>
+
+			<div id="p2">				
+				<img src="sec3_img.png" id="p2_2">
+
+			  <div class="kor500" id="p2_3" style="display:inline-block;">
+			    새로운 세대의 유행어나 유머 소재들을 광고에서도 많이 봤을 것이다. 왜 Z세대들은 완결성을 가진 서사보단 거칠고 어설픈 B급 감성에 더 열광할까? 이전의 세대들이 ‘삶의 목적’을 추구했다면, 90년대 생들은 ‘삶의 유희’를 추구한다.<br><br><br><br><br><br>
+				이들은 일터에서도 참여하고 협업하며 성취를 통해서도 유희를 추구하려 한다.
+			  </div>
+			  <div class="p2_4 korblack"><p>
+			  회사에서도 재미있게!<br>일터에서도 유쾌하게!
+			  </p></div>
+		 
+			</div>
+
+
+		</section>
+
+		<section class="sec4">
+			<span id="list4"></span>
+
+			<div class="video2">
+			<iframe width="1255" height="710" src="https://www.youtube.com/embed/Mp1MSZZk7LA?start=10&end=150"" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			
+
+			<div class="box8">
+			<div class="ml10 korblack">			
+					<span class="text-wrapper">
+    <span class="letters"> 요즘 것들은</span></span></div>
+
+			<div data-aos="flip-up"  class="box6-2"><div class="box6-1"><p>정직하고 솔직하고</p></div></div>
+			</div>
+			<div data-aos="fade-up"
+     		data-aos-duration="2000" class="backtypo2"><p>#정직한 채용바람</p></div>
+     		<div data-aos="fade-up"
+     		data-aos-duration="2000" class="backtypo3"><p>#솔직히 말하자면</p></div>
+     		 <div class="kor500" id="p3" style="display:inline-block;">
+			    Z세대는 회사에게 솔직함과 정직함을 요구한다. 그렇기 때문에 연줄, 낙하산 없는 정직하고 투명한 채용을 원한다. 신입사원<br>들의 퇴사 이유 중 가장 많이 언급되는 것이 생각과는 다른<br>복지제도, 근무환경, 첫 월급 등이 있다. 여기서 우리가 주목해야 하는 것은 ‘생각과는 다른’이다. MZ세대들은 투명하고 솔직한<br>커뮤니케이션을 원한다. 이들은 자신의 의견이나 생각을 있는<br>그대로 표현하는 게 연습된 세대이기 때문에 자신들의 생각도<br>솔직하게 표현한다.
+			  </div>
+
+			  <div class="box9-1 kor500"><p>변하는 세대와 변화하는 시대 문화의 실태</p></div>
+			   <div class="box9-2"><div class="box9-3 kor500"><p>새로운 세대의 관찰, 요즘 것들의 실태 보고서</p></div></div>
+			   <div class="dimg"><img src="direct.png"></div>
+			   <div class="box9-4"><div class="box9-5 kor500"> <a href="./nep.html"><p><b>어쩌다보니 넵병 보러가기</b>&emsp;  &emsp; &emsp;  &nbsp; &nbsp;</p></a></div></div>
+			    
+
+
+
+
+		</section>
+		<footer class="fixed-footer">
+			<div class="footer-left">
+			   	<img src="footer.png">
+			   	<p>Taeyu Kim<br>
+			   		hjk3886@gmail.com<br>
+			   		insta_@taetae__yam
+			   	</p>
+
+			   	</h1>
+			</div>
+
+			<div class="footer-right">
+
+			<h1>일은 하고 싶지만, 회사는 가기 싫은 Z세대의 이야기</h1>			  
+			   	<p>빠르게 변하는 세상에서  같이 일하는 동료이자, 앞으로 시장을 주도할 현세대를 이해하려는 노력은 모두의 생존을 위해 필요합니다. 우리가 맞이할 직장에서 새로운 세대와 함께 생존하기 위한 가이드이자 우리의 생각을 이야기하려 합니다. 일은 하고 싶지만, 회사는 싫은 거침없는 Z세대의 행보를 만나보세요!
+			   	</p>
+			   
+			</div>
+
+			<div class="footer-bottom">Copyright©2020.Kim Taeyu.All rights reserved.</div>
+
+
+		</footer>
+			
+		
+
+
+		
+	</div>
+	
+
+	
+
+		
+
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  <script>
+
+		menuff.onmouseover=function(){
+	     dropdowncontent.style.visibility = "visible";
+	     dropdowncontent.style.height = "350px";
+	     dropdowncontent.style.transition="all 0.2s";
+	     menuff.style.cursor="url(cursorclick.png) 0 0 ,auto;";
+	     menuff.style.borderRadius="50%";
+	     menubox.style.height="460px";
+	   }
+
+
+
+	  menubox.onmouseout=function(){
+	    dropdowncontent.style.visibility = "hidden";
+	    dropdowncontent.style.height = "0px";
+	    dropdowncontent.style.transition="all 0.2s";
+	    menuff.style.borderRadius="0%";
+	    menubox.style.transition="all 0.2s";
+	    menubox.style.height="60px";
+	}
+
+	  dropdowncontent.onmouseover=function(){
+	    dropdowncontent.style.visibility="visible";
+	    dropdowncontent.style.height="350px";
+	    menuff.style.borderRadius="0%";
+	    menubox.style.height="460px";
+	  }
+
+	click1.onclick = function(){
+ 	 document.getElementById('list2').scrollIntoView();
+ 	}
+ 	click2.onclick = function(){
+ 	 document.getElementById('list3').scrollIntoView();
+ 	}
+ 	click3.onclick = function(){
+ 	 document.getElementById('list4').scrollIntoView();
+ 	}
+
+ 	// Wrap every letter in a span
+	var textWrapper = document.querySelector('.box6 .letters');
+	textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+	anime.timeline({loop: true})
+	  .add({
+	    targets: '.box6 .letter',
+	    translateY: ["1.1em", 0],
+	    translateZ: 0,
+	    duration: 750,
+	    delay: (el, i) => 50 * i
+	  }).add({
+	    targets: '.box6',
+	    opacity: 0,
+	    duration: 1000,
+	    easing: "easeOutExpo",
+	    delay: 1000
+	  });
+
+	  // Wrap every letter in a span
+	var textWrapper = document.querySelector('.ml16');
+	textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+	anime.timeline({loop: true})
+	  .add({
+	    targets: '.ml16 .letter',
+	    translateY: [-100,0],
+	    easing: "easeOutExpo",
+	    duration: 1400,
+	    delay: (el, i) => 30 * i
+	  }).add({
+	    targets: '.ml16',
+	    opacity: 0,
+	    duration: 1000,
+	    easing: "easeOutExpo",
+	    delay: 1000
+	  });
+
+
+	  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: (el, i) => 45 * i
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+			 
+
+
+			
+	</script>
+
+
+</body>
+
+	
+
+
+</html>
